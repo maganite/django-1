@@ -17,7 +17,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 
+# booking
+# teams
+# menu
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('home.urls')),
+    path('booking/',include('booking.urls')),
+    path('teams/',include('teams.urls')),
+    
 ]
