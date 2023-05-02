@@ -26,5 +26,6 @@ urlpatterns = [
     path('',include('home.urls')),
     path('booking/',include('booking.urls')),
     path('teams/',include('teams.urls')),
+    path('menu/',include('menu.urls'))
     
 ]

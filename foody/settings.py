@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'home',
     'booking',
     'teams',
+    'menu'
 ]
 
 MIDDLEWARE = [
