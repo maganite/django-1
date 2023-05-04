@@ -1,3 +1,11 @@
 from django.db import models
 
-# Create your models here.
+# item
+class Item(models.Model):
+    name = models.CharField(max_length=100)
+    price = models.DecimalField()
+
+    # category
+
+# category
+# name
