@@ -1,9 +1,21 @@
 from django.shortcuts import render
 
-# Create your views here.
+from .models import Item
 
 def menu(request):
-    return render(request,'menu.html')
+    # menu_items = [
+    #     {
+    #         "name": "Dragon Chicken",
+    #         "price": 300
+    #     },
+    #     {
+    #         "name": "Fire Chinken",
+    #         "price": 200
+    #     }
+    # ]
+    menu_items = Item.objects.all()
+
+    return render(request=request, template_name='menu.html', context={"menu": menu_items})
 
 def about(request):
     return render(request,'about.html')
