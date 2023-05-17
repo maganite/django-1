@@ -7,11 +7,11 @@ class Item(models.Model):
     #style = models.CharField(max_length=60)
     #number = models.IntegerField()
     # category
-    def __str__(self) -> str:
-        return self.name
+    #def __str__(self) -> str:
+    #    return self.name
 
 
-class category(models.Model):
+class Category(models.Model):
     choice=[
         ("br","breakfast"),
         ("lu","lunch"),
