@@ -11,14 +11,5 @@ class Item(models.Model):
     #    return self.name
 
 
-class Category(models.Model):
-    choice=[
-        ("br","breakfast"),
-        ("lu","lunch"),
-        ("sn","snacks"),
-        ("dn","dinner")
-    ]
-    name = models.CharField(max_length=120)#name of dish
-    category = models.CharField(max_length=2,choices=choice)
 
     

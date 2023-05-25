@@ -14,12 +14,13 @@ def menu(request):
     #     }
     # ]
     menu_items = Item.objects.all()
-    #print(Category.objects.all()[0].category)
+    print(Item.objects.all())
     
     para= "acha bna h"
     return render(request=request, template_name='menu.html', context={"menu": menu_items,"para":para})
 
 def about(request):
+    #printItem()
     return render(request,'about.html')
 
 def service(request):

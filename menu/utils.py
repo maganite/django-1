@@ -1,3 +1,5 @@
-from .models import *
+from menu.models import *
 
-print(Item.objects.all())
+
+def printItem():
+    print(Item.objects.all())
